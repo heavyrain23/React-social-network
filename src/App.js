@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import { Route, Link, BrowserRouter} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 import Header from'./components/Header/Header';
 import Navbar from'./components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import DialogsContainer from './components/Dialogs/DialogsContainer';
 
 
-const App = (props) => {
+const App = () => {
 
   return (
            <div className ="app-wrapper">
@@ -15,9 +15,9 @@ const App = (props) => {
             <Navbar />
             <div className = "app-wrapper-content">
                 <Route path='/Dialogs' 
-                    render={ () => <DialogsContainer store={props.store} /> } />
+                    render={ () => <DialogsContainer /> } />
                 <Route path='/Profile'
-                     render={ () => <Profile store ={props.store}  /> } />
+                     render={ () => <Profile/> } />
             </div>
         </div>
     )

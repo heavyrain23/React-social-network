@@ -45,11 +45,7 @@ let store = {
     },
 
     _subscribe(observer) {
-        this._rerenderEntireTree = observer;
-    },
-    
-    rerenderEntireTree() {
-    console.log('State changed');
+        this._callSubscriber = observer;
     },
 
     dispatch(action) {
@@ -58,11 +54,9 @@ let store = {
         this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action);
         this._state.sidebar = sidebarReducer(this._state.sidebar, action);
 
-        this._CallSubscriber(this._state);
+        this._callSubscriber(this._state);
     }
 }
-
-
 
 
 export default store;
