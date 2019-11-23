@@ -20,4 +20,5 @@ const AddMessageForm = (props) => {
     )
 }
 
-export default reduxForm ({form: 'dialog-add-message-form'}) (AddMessageForm);
+export default reduxForm({form: 'dialog-add-message-form'})(AddMessageForm);
+
