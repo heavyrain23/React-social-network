@@ -1,7 +1,73 @@
 .descriptionBlock {
     padding: 10px;
+    
 }
 
 .mainPhoto {
-    max-width: 200px;
+    max-width: 250px;
+    height: 250x;
+    border-radius: ;    
 }
+
+.editPic {
+    display: inline-block;
+    padding: 7px 30px;
+    background-color: rgb(148, 171, 235);
+    font-weight: bold;
+    font-size: 10px;
+    color: rgb(37, 32, 32);
+    text-transform: uppercase;
+    transition: background .1s linear, color .1s linear;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.editPic:hover {
+    background-color: rgb(93, 126, 216); ;
+}
+
+.profileContainer {
+     display: flex; 
+     justify-content: space-between ;
+     border-top: 1px solid rgb(201, 201, 218);
+     border-bottom: 1px solid rgb(201, 201, 218);
+     position: relative;
+         
+}
+
+.contactsContainer {
+     margin-top: 45px;   
+     margin-right: 200px;
+    
+     width: 300px;
+    
+    
+}
+.profileContainer b {
+    line-height: 1.6;
+    color: #666;   
+}
+
+.statusContainer {
+    position: absolute;
+    top: 11%;
+    right:45% ;
+    border-bottom: 1px solid rgb(201, 201, 218);
+    font-weight: 500;
+    color: #666;  
+    max-width: 300px;
+    
+}
+.statusContainer:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 100px;
+    width: 620px;
+    height: 1px;
+    background-color: rgb(201, 201, 218);
+    
+    
+}
+
