@@ -6,7 +6,7 @@
 .mainPhoto {
     max-width: 250px;
     height: 250x;
-    border-radius: ;    
+    border-radius: 10px ;    
 }
 
 .editPic {
@@ -51,20 +51,20 @@
 .statusContainer {
     position: absolute;
     top: 11%;
-    right:45% ;
-    border-bottom: 1px solid rgb(201, 201, 218);
+    right: 40%;
+    width: 400px;
     font-weight: 500;
     color: #666;  
     max-width: 300px;
     
 }
+
 .statusContainer:before {
     content: "";
     position: absolute;
     display: block;
     top: 100%;
-    left: 100px;
-    width: 620px;
+    width: 690px;
     height: 1px;
     background-color: rgb(201, 201, 218);
     

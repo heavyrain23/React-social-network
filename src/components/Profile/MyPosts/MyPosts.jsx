@@ -14,7 +14,7 @@ let AddNewPostForm = (props) => {
                    validate = {[required, maxLength10]} />
         </div>
         <div>
-            <button>Add post</button>
+            <button className ={s.button}>Add post</button>
         </div>
     </form>;
 }
@@ -34,9 +34,9 @@ const MyPosts = (props) => {
     return (
         <div className={s.postsBlock}>
             <h3>My posts</h3>
-            <AddNewPostFormRedux onSubmit={onAddPost} />
+           <div> <AddNewPostFormRedux onSubmit={onAddPost} /></div> 
             <div className={s.posts}>
-                {postsElements}
+              <div> {postsElements}</div>  
             </div>
         </div>
     )

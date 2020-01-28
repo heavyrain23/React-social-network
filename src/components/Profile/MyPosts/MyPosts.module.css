@@ -1,16 +1,39 @@
 .item {
-      color: greenyellow;
+    color: #333;
   }
 
   .item img {
-    width: 40xp;
-    height: 40px
+    width: 40px;
+    height: 40px;
+    
   }
 
   .postsBlock {
-    padding: 10px;
+     margin: 0 auto;
+     text-align: center;
+     color: #333;
   }
 
   .posts {
-    margin-top: 10px;
+    text-align: left;
+    margin-left: 10px;
+   
   }
+
+  .button {
+    display: inline-block;
+    padding: 7px 30px;
+    background-color: rgb(148, 171, 235);
+    font-weight: bold;
+    font-size: 10px;
+    color: rgb(37, 32, 32);
+    text-transform: uppercase;
+    transition: background .1s linear, color .1s linear;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    background-color: rgb(93, 126, 216); ;
+}
+

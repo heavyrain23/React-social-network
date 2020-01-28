@@ -58,14 +58,11 @@ const ProfileData = ({ profile, isOwner, goToEditMode }) => {
                 <div>
                     <b>My professional skills</b>: {profile.lookingForAJobDescription}
                 </div>
-
             }
+            <div> <b>About me</b>: {profile.aboutMe}</div>
         </div>
         
         <div className={s.contactsContainer}>
-        <div>
-            <b>About me</b>: {profile.aboutMe}
-        </div>
             <b>Contacts</b>: {Object.keys(profile.contacts).map(key => {
                 return <Contact key={key} contactTitle={key} contactValue={profile.contacts[key]} />
             })}
