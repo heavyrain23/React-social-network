@@ -6,9 +6,11 @@ import {connect} from "react-redux";
 import {login} from "../../redux/auth-reducer";
 import {Redirect} from "react-router-dom";
 import style from './../common/FormsControls/FormsControls.module.css'
+import s from './Login.css'
 
 const LoginForm = ({ handleSubmit, error, captchaUrl }) => {
     return (
+        <div>
         <form onSubmit={handleSubmit}>
             {createField("Email", "email", [required], Input)}
             {createField("Password", "password", [required], Input, { type: "password" })}
@@ -22,9 +24,10 @@ const LoginForm = ({ handleSubmit, error, captchaUrl }) => {
             </div>
             }
             <div>
-                <button>Login</button>
+                <button className = {style.loginButton}>Login</button>
             </div>
         </form>
+        </div>
     )
 }
 
@@ -39,7 +42,7 @@ const Login = (props) => {
         return <Redirect to={"/profile"} />
     }
 
-    return <div>
+    return <div className = {style.loginContainer}> 
         <h1>Login</h1>
         <LoginReduxForm onSubmit={onSubmit} captchaUrl={props.captchaUrl} />
     </div>
