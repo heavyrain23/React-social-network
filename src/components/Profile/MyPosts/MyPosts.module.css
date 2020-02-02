@@ -2,16 +2,10 @@
     color: #333;
   }
 
-  .item img {
-    width: 40px;
-    height: 40px;
-    
-  }
-
   .postsBlock {
      margin: 0 auto;
      text-align: center;
-     color: #333;
+     color: #666;
   }
 
   .posts {
@@ -30,7 +24,8 @@
     text-transform: uppercase;
     transition: background .1s linear, color .1s linear;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .button:hover {

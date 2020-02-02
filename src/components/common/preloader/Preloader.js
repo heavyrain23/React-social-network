@@ -1,8 +1,9 @@
-import preloader from '../../../assets/images/805.gif'
+import preloader from '../../../assets/images/preloader.svg'
 import React from 'react'
+import s from './preloader.module.css'
 
 let Preloader = (props) => {
-    return <div style = { { backgroundColor: 'white'} }>
+    return <div className = {s.preloader}>
         <img src = {preloader} />
     </div>
 }

@@ -1,23 +1,35 @@
 .dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
-}
-
-.dialogsItems {
+    background-color: rgb(237, 238, 245);
+    border-radius: 10px;
+    border: 1px solid rgb(223, 223, 230);
     padding: 15px;
-}
-
-.messages {
-    padding: 10px;
+    padding-bottom: 45px;
     
-
 }
 
-.messages .message {
-    color: white;
+.dialog a {
+    color: #666;
+    text-decoration: none;
+    
+}
+.dialog:hover {
+    background-color:  rgb(228, 230, 245);
+}
+
+.dialog.active a {
+    color: rgb(49, 56, 151);
+    font-weight: bold;
 }
 
 .submitForm {
-    padding: 15px;
     margin-top: 50px;
+}
+
+.messages {
+    padding-bottom: 10px;
+    padding-left: 15px;
+    background-color: white;
+    width: 50%;
 }

@@ -15,7 +15,7 @@ const AddMessageForm = (props) => {
                         placeholder = "Enter your message" name = "newMessageBody"/>
             </div>
             <div>
-                <button>Send</button>
+                <button className={s.button}>Send</button>
             </div>
         </form>
     )
