@@ -1,7 +1,6 @@
 
 
 ## DEMO VERSION YOU CAN SEE HERE https://heavyrain23.github.io/React-social-network/
-TO LOGIN IN SYSTEM USE EMAIL: free@samuraijs.com AND PASSWORD free
 
 Social network page was created with React and redux library and other tools. 
 This projects files have a readable and clear structure therefore the project is easy to rebuild and support. There is used a Axios library to make a AJAX requests to back end server.(I'm not developed back-and.) For components building i applied Class components and Hooks. For components styling i was used css.module approach.
