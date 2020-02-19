@@ -1,16 +1,17 @@
-.userContainer {
-    display: flex;    
+.userContainer {   
+    background-color: rgb(255, 255, 255);  
     text-align: center;
-    background-color: rgb(255, 255, 255);   
+    margin-bottom: 4px;
 }
 
 .userItem {
-    width: 100%;
+    width: 40%;
     background-color: rgb(237, 238, 245);
     border: 1px solid rgb(223, 223, 230);
     border-radius: 10px;
     margin: 2px;   
     padding: 16px;   
+    margin: 0 auto;
     
 }
 
