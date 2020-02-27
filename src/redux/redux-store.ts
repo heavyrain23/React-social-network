@@ -22,8 +22,8 @@ type RootReducerType = typeof rootReducer;
 export type AppStateType = ReturnType<RootReducerType>
 
 let store = createStore(rootReducer, applyMiddleware(thunkMiddleware));
-
-window.store = store;
+// @ts-ignore
+window.__store__ = store;
 
 
 export default store;
