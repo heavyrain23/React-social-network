@@ -22,7 +22,6 @@ let initialState = {
     messages: [
         {id: 1, message: 'Hi'},
         {id: 2, message: 'how are u'},
-        {id: 3, message: 'yo nigga'},
         {id: 4, message: 'whats up man'},
         
     ] as Array<MessageType>
